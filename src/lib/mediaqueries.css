@@ -1,0 +1,55 @@
+@media only screen and (max-width: 500px) {
+   
+    .background-img { 
+        background-image: url('../assets/images/MobileBackgroundImage.jpg'); 
+        background-position: center;
+    }
+
+    .container {
+        margin: 20px;
+        width: 50%;
+        width: unset;
+
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: unset;
+    }
+
+    .logo {
+        margin: 0px;
+        height: 108px;
+        text-align: center;
+        margin-bottom: 35%;
+    }
+
+    .description {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+        max-width: unset;
+        min-width: unset;
+        line-height: unset;
+        width: 50%;
+        margin-bottom: 10%;
+    }
+
+    .mobile-launch {
+        display: block;
+        margin-bottom: 35%;
+    }
+
+    p.desktop-launch {
+        display: none;
+    }
+
+    input.input-box {
+        min-width: unset;
+        width: 50% !important;
+    }
+
+    
+}

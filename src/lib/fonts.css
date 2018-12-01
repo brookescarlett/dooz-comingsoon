@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Avenir Next Thin";
+    src: url("../fonts/AvenirNextLTPro-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Avenir Light";
+    src: url("../fonts/AvenirNextLight.otf") format("opentype");
+}

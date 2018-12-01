@@ -1,0 +1,15 @@
+body {
+  font-family: "Avenir Light", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background-img {
+  background-image: url('https://github.com/brookescarlett/bsy-space/blob/master/public/ComingSoon_Image_ForBrooke.jpg?raw=true');
+  background-size: cover;
+  z-index: -5;
+}
+
+.container {
+  margin: 48px 72px;
+}

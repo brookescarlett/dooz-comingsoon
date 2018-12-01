@@ -1,0 +1,67 @@
+.input-box {
+  min-width: 99%;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "Avenir Next Thin";
+  color: white;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:hover {
+  background-color: rgb(11, 19, 42);
+}
+
+.submit {
+  font-family: "Avenir Next Thin";
+  min-width: 49.5%;
+  border-radius: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  margin-top: 12px;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.submit:hover {
+  background-color: rgb(11, 19, 42);
+}
+
+.what-sign {
+  color: white;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.al-items {
+  width: 49%;
+  border: 1px solid white !important;
+  margin-left: 0px;
+}
+
+.al-items:hover {
+  background-color: rgb(11, 19, 42);
+}
+
+.active {
+  background-color: orange;
+}
+
+.opt {
+  cursor: pointer !important;
+  font-size: 11px;
+  color: white;
+}
+
+.rad {
+  visibility:hidden !important;
+}
+
+input:checked + label {
+  background: rgb(11, 19, 42);
+}

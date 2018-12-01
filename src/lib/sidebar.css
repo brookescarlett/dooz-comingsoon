@@ -1,0 +1,17 @@
+.sidebar {
+  width: 368px;
+}
+
+.description {
+  margin-top: 72px;
+  margin-bottom: 108px;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 34px;
+  color: white;
+  line-height: 46px;
+}
+
+.mobile-launch {
+    display: none;
+}
