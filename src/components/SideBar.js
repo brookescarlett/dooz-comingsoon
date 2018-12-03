@@ -11,7 +11,8 @@ export default class SideBar extends Component {
         this.state = {
             showOptions: false, 
             sign: "what's your sign?", 
-            email: "what's your email?"
+            email: "what's your email?", 
+            mainText: `elevated closet staples inspired by the zodiac – the celestial twelve`
         }
     }
 
@@ -32,13 +33,19 @@ export default class SideBar extends Component {
         })
     }
 
+    handleSubmit = () => {
+        this.setState({
+            mainText: "Thank you for signing up. Check your inbox for exclusive Dooz updates. See you in March 2019!"
+        })
+    }
+
     render() {
         return (
             <div className="sidebar">
                 <img src={doozlogo} alt="logo" className="logo fit" />
-                <p className="description">elevated closet staples inspired by the zodiac – the celestial twelve</p>
+                <p className="description">{this.state.mainText}</p>
                 <p className="description mobile-launch">launching 2019</p>
-                {this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} /> }
+                {this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> }
             </div>
         )
     }

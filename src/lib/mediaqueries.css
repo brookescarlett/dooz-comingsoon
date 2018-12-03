@@ -21,9 +21,9 @@
 
     .logo {
         margin: 0px;
-        height: 108px;
+        height: 72px;
         text-align: center;
-        margin-bottom: 35%;
+        margin-bottom: 25%;
     }
 
     .description {
@@ -39,7 +39,7 @@
 
     .mobile-launch {
         display: block;
-        margin-bottom: 35%;
+        margin-bottom: 25%;
     }
 
     p.desktop-launch {

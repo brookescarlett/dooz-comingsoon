@@ -1,11 +1,19 @@
+.mc_embed_signup {
+    transition: all 2s ease-in-out;
+}
+
 .input-box {
   min-width: 99%;
   background-color: transparent;
   border: 1px solid white;
-  font-family: "Avenir Next Thin";
+  font-family: "Avenir Light";
   color: white;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 15px;
+}
+
+input {
+    padding: 7.5px 0px;
 }
 
 input::placeholder {
@@ -17,7 +25,7 @@ input:hover {
 }
 
 .submit {
-  font-family: "Avenir Next Thin";
+  font-family: "Avenir Light";
   min-width: 49.5%;
   border-radius: 100px;
   border: 1px solid white;
@@ -46,10 +54,6 @@ input:hover {
 
 .al-items:hover {
   background-color: rgb(11, 19, 42);
-}
-
-.active {
-  background-color: orange;
 }
 
 .opt {
