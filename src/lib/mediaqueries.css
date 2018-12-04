@@ -1,13 +1,13 @@
 @media only screen and (max-width: 500px) {
    
     .background-img { 
-        background-image: url('../assets/images/MobileBackgroundImage.jpg'); 
+        background-image: url('../assets/images/MobileBackground.jpg'); 
         background-position: center;
     }
 
     .container {
-        margin: 20px;
-        width: 50%;
+        margin: 34px 20px 20px 14px;
+        width: 171px;
         width: unset;
 
     }
@@ -23,33 +23,57 @@
         margin: 0px;
         height: 72px;
         text-align: center;
-        margin-bottom: 25%;
+        margin-bottom: 10%;
     }
 
     .description {
-        font-size: 20px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
         margin-top: 0px;
         margin-bottom: 12px;
         max-width: unset;
         min-width: unset;
         line-height: unset;
-        width: 50%;
-        margin-bottom: 10%;
+        width: 171px;
+        margin-bottom: 34px;
+    }
+
+     input.input-box {
+        min-width: unset;
+        width: 171px;
+        height: 22px;
+        font-size: 13px;
+        margin-bottom: 34px;
+
+    }
+
+    .submit {
+        margin-top: 0px;
+    }
+
+
+    .caption {
+        flex-direction: column;
+    }
+  
+    .input-group {
+        overflow-y: scroll;
+        max-height: 175px;        
     }
 
     .mobile-launch {
         display: block;
-        margin-bottom: 25%;
+        margin-bottom: 10%;
+    }
+
+    div.footer {
+        height: 50px !important;
     }
 
     p.desktop-launch {
         display: none;
     }
 
-    input.input-box {
-        min-width: unset;
-        width: 50% !important;
-    }
-
+   
     
 }

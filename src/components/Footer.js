@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import Facebook from '../assets/svgs/facebooklogo.svg'
-import Instagram from '../assets/svgs/instagram.svg'
+import Facebook from '../assets/svgs/FacebookIcon.svg'
+import Instagram from '../assets/svgs/InstagramIcon.svg'
+import Twitter from '../assets/svgs/TwitterIcon.svg'
+
 
 
 export default class Footer extends Component {
@@ -11,6 +13,8 @@ export default class Footer extends Component {
                 <div className="flex">
                     <img src={Facebook} alt="facebook-logo" className="social-icons" />
                     <img src={Instagram} alt="facebook-logo" className="social-icons" />
+                    <img src={Twitter} alt="facebook-logo" className="social-icons" />
+
                 </div>
                 <div>
                     <p className="desktop-launch">launching 2019</p>   

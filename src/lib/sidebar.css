@@ -1,5 +1,5 @@
 .sidebar {
-  width: 348px;
+  width: 400px;
 }
 
 .description {
@@ -10,6 +10,7 @@
   font-size: 34px;
   color: white;
   line-height: 46px;
+  letter-spacing: 2px;
 }
 
 .mobile-launch {
