@@ -9,13 +9,12 @@
   font-family: "Avenir Light";
   color: white;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 input {
-    padding: 7.5px 0px 7.5px 7.5px
-    ;
-    letter-spacing: 1.5px;
+  padding: 7.5px 0px 7.5px 7.5px;
+  letter-spacing: 2px;
 }
 
 input::placeholder {
@@ -35,7 +34,7 @@ input:hover {
   margin-top: 12px;
   font-size: 15px;
   color: white;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .submit:hover {

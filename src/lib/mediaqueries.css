@@ -58,7 +58,15 @@
   
     .input-group {
         overflow-y: scroll;
-        max-height: 175px;        
+        -webkit-overflow-scrolling: touch;
+        max-height: 175px;          
+
+    }
+
+    .al-items {
+        border-width: 0px 1px !important;
+        width: unset;
+        width: 171px;
     }
 
     .mobile-launch {

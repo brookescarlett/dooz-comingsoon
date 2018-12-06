@@ -3,14 +3,14 @@
 }
 
 .description {
-  margin-top: 72px;
-  margin-bottom: 72px;
+  margin-top: 57px;
+  margin-bottom: 57px;
   max-width: 100%;
   min-width: 100%;
   font-size: 34px;
   color: white;
-  line-height: 46px;
-  letter-spacing: 2px;
+  line-height: 48px;
+  letter-spacing: 2.3px;
 }
 
 .mobile-launch {

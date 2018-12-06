@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Facebook from '../assets/svgs/FacebookIcon.svg'
-import Instagram from '../assets/svgs/InstagramIcon.svg'
+import Facebook from '../assets/svgs/fb-icon.svg'
+import Instagram from '../assets/svgs/insta-ic.svg'
 import Twitter from '../assets/svgs/TwitterIcon.svg'
 
 
