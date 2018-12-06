@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Form from '../components/Form'
 import Options from '../components/Options'
+import ThanksText from '../components/ThanksText'
 import doozlogo from '../assets/svgs/dlogo.svg'
 
 
@@ -46,8 +47,10 @@ export default class SideBar extends Component {
         return (
             <div className="sidebar">
                 <img src={doozlogo} alt="logo" className="logo fit" />
-                <p className="description">{this.state.mainText}</p>
-                <p className="description mobile-launch">launching 2019</p>
+                {/* {this.props.currentPage === "ThankYou" ?  : null } */}
+                {this.props.currentPage !== "ThankYou" ? <><p className="description">{this.state.mainText}</p>
+                <p className="description mobile-launch">launching 2019</p></> : <ThanksText /> } 
+                
                 
                 { this.props.currentPage !== "ThankYou" ?
                     this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
