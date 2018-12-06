@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div className="background-img fixed top-0 left-0 right-0 bottom-0">
         <div className="container flex flex-column items-around">
-          <SideBar />
+          <SideBar 
+            mainText={"elevated closet staples inspired by the zodiac – the celestial twelve"}
+          />
           <Footer />
         </div>
       </div>

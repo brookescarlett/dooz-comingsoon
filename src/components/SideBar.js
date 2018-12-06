@@ -6,13 +6,13 @@ import doozlogo from '../assets/svgs/dlogo.svg'
 
 
 export default class SideBar extends Component {
-    constructor () {
-        super()
+    constructor (props) {
+        super(props)
         this.state = {
             showOptions: false, 
             sign: "what's your sign?", 
             email: "what's your email?", 
-            mainText: `elevated closet staples inspired by the zodiac – the celestial twelve`
+            mainText: props.mainText
         }
     }
 
@@ -28,9 +28,12 @@ export default class SideBar extends Component {
     }
 
     changeEmail = (event) => {
+        localStorage.setItem('email', event.target.value)
+
         this.setState({
             email: event.target.value,
-        })
+        }, () => console.log('hi', localStorage.email))
+        
     }
 
     handleSubmit = () => {
@@ -45,7 +48,11 @@ export default class SideBar extends Component {
                 <img src={doozlogo} alt="logo" className="logo fit" />
                 <p className="description">{this.state.mainText}</p>
                 <p className="description mobile-launch">launching 2019</p>
-                {this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> }
+                
+                { this.props.currentPage !== "ThankYou" ?
+                    this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
+                }
+                
             </div>
         )
     }
