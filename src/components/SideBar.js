@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Form from '../components/Form'
 import Options from '../components/Options'
+import MobileOptions from '../components/MobileOptions'
+
 import ThanksText from '../components/ThanksText'
 import doozlogo from '../assets/svgs/dlogo.svg'
 
@@ -46,6 +48,12 @@ export default class SideBar extends Component {
         return checkEmail.test(email)
     }
 
+    handleChange = (value) => {
+        this.setState({
+            sign: value, 
+        })
+    }
+
     handleSubmit = (e) => {
         e.preventDefault()
         console.log(this.validateEmail(this.state.email))
@@ -70,6 +78,7 @@ export default class SideBar extends Component {
 
 
     render() {
+        console.log(window.innerWidth)
         return (
             <div className="sidebar">
                 <img src={doozlogo} alt="logo" className="logo fit" />
@@ -79,7 +88,8 @@ export default class SideBar extends Component {
                 
                 
                 { this.state.currentPage !== "ThankYou" ?
-                    this.state.showOptions ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} closeWindow={this.closeWindow} /> : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
+                    this.state.showOptions ? 
+                        (window.innerWidth > 500 ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} closeWindow={this.closeWindow} /> : <MobileOptions changeSign={this.handleChange} />) : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
                 }
                 
             </div>

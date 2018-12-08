@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import SideBar from './SideBar'
 import Footer from './Footer'
+import MobileOptions from './MobileOptions'
+
 
 
 class ThankYou extends Component {
@@ -15,6 +17,7 @@ class ThankYou extends Component {
                         mainText={`Hi! ${localStorage.email ? localStorage.email : null} Thank you for signing up. Check your inbox for exclusive Dooz updates. See you in March 2019!`}
                     />
                     <Footer />
+                    <MobileOptions />
                 </div>
             </div>
         );
