@@ -10,7 +10,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div className="footer flex justify-between items-center">
-                <div className="flex">
+                <div className="footer-icons flex">
                     <img src={Facebook} alt="facebook-logo" className="social-icons" />
                     <img src={Instagram} alt="facebook-logo" className="social-icons" />
                     <img src={Twitter} alt="facebook-logo" className="social-icons" />
