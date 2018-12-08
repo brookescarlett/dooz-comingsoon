@@ -2,6 +2,12 @@
     transition: all 2s ease-in-out;
 }
 
+.close-icon {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
 .input-box {
   min-width: 99%;
   background-color: transparent;
@@ -15,6 +21,18 @@
 input {
   padding: 7.5px 0px 7.5px 7.5px;
   letter-spacing: 2px;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: white;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
 
 input::placeholder {

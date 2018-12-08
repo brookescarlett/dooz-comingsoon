@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import close from '../assets/svgs/close-icon.svg'
 
 export default class Options extends Component {
     render() {
         return (
             <div className="input-group form-input animated fadeIn delay 4s">
+                <img src={close} alt="close-icon" className="close-icon" onClick={this.props.closeWindow} />
                 <ul className="flex flex-wrap items-start caption list-reset">
                     <li className="al-items"><input className="rad" onClick={this.props.changeSign} type="radio" value="aries: mar 21-apr 19" name="MMERGE1" id="mce-MMERGE1-0" /><label className="opt" htmlFor="mce-MMERGE1-0">aries: mar 21-apr 19</label></li>
                     <li className="al-items"><input className="rad" onClick={this.props.changeSign} type="radio" value="libra: sep 23-oct 22" name="MMERGE1" id="mce-MMERGE1-1" /><label className="opt" htmlFor="mce-MMERGE1-1">libra: sep 23-oct 22</label></li>
