@@ -6,7 +6,7 @@
     }
 
     .container {
-        margin: 34px 20px 20px 14px;
+        margin: 34px 14px 20px 14px;
         width: 172px;
         width: unset;
 
@@ -78,6 +78,17 @@
         width: unset;
         width: 172px;
     }
+
+    .social-icons {
+        margin-right: 8px;
+        width: 20px;
+        height: 16px;
+    }
+
+     .social-icons:last-of-type {
+        margin-right: 14px;
+    }
+
 
     .mobile-launch {
         display: block;
