@@ -36,17 +36,12 @@ export default class MobileOptions extends Component {
         }))
         
     }
-
-    handleClick = () => {
-        console.log('here', this.state.isPickerShow)
-        this.setState({ isPickerShow: false })
-    }
-
+  
     togglePicker = (event) => {
-        console.log('here', this.state.isPickerShow)
-        this.props.changeSign(event.target.value)
+        this.props.handleClick()
+        this.props.changeSign(this.state.valueGroups.sign)
         this.setState({
-            isPickerShow: false
+            isPickerShow: !this.state.isPickerShow
         })
     }
 
@@ -55,7 +50,7 @@ export default class MobileOptions extends Component {
         const maskStyle = {
             display: this.state.isPickerShow ? 'block' : 'none'
         };
-        const pickerModalClass = `picker-modal${this.state.isPickerShow ? ' picker-modal-toggle' : ''}`;
+        
         return(
             <div>
                 <input 
@@ -66,14 +61,19 @@ export default class MobileOptions extends Component {
                     onClick={this.togglePicker}
                 />
                 <div className="picker-modal-container">
-                    <div className="picker-modal-mask" style={maskStyle} onClick={this.togglePicker}></div>
                     
-                        <Picker
-                            optionGroups={optionGroups}
-                            valueGroups={valueGroups}
-                            onChange={this.handleChange}
-                        />
-                  
+                    <div className="pickar-modal">
+                        <div className="picker-modal-mask" style={maskStyle} onClick={this.togglePicker}>
+                        
+                            <Picker
+                                optionGroups={optionGroups}
+                                valueGroups={valueGroups}
+                                onChange={this.handleChange}
+                                
+                            />
+                        </div>
+                    </div>
+                
                 </div>
                 
             </div>

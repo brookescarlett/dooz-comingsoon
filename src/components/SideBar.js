@@ -51,7 +51,7 @@ export default class SideBar extends Component {
     handleChange = (value) => {
         this.setState({
             sign: value, 
-        })
+        }, () => console.log('here', this.state.sign))
     }
 
     handleSubmit = (e) => {
@@ -89,7 +89,7 @@ export default class SideBar extends Component {
                 
                 { this.state.currentPage !== "ThankYou" ?
                     this.state.showOptions ? 
-                        (window.innerWidth > 500 ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} closeWindow={this.closeWindow} /> : <MobileOptions changeSign={this.handleChange} />) : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
+                        (window.innerWidth > 500 ? <Options handleClick={this.toggleDisplay} changeSign={this.changeSign} closeWindow={this.closeWindow} /> : <MobileOptions changeSign={this.handleChange} handleClick={this.toggleDisplay} />) : <Form handleClick={this.toggleDisplay} sign={this.state.sign} email={this.state.email} changeEmail={this.changeEmail} handleSubmit={this.handleSubmit} /> : null
                 }
                 
             </div>
