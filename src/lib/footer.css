@@ -1,8 +1,14 @@
 .footer {
-  width: 100%;
   font-size: 40px;
   font-family: "Avenir Next Thin";
   color: white;
+  /* margin: 2% 72px; */
+  margin: 2.5% 0px;
+  width: 100%;
+  /* position: fixed; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0;  */
 }
 
 .social-icons {
@@ -12,6 +18,10 @@
     border: 1px solid white;
     border-radius: 200px;
     padding: 10px;
+}
+
+.desktop-launch {
+    margin: 0px;
 }
 
 .social-icons:hover {

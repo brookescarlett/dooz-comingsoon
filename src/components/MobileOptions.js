@@ -38,8 +38,8 @@ export default class MobileOptions extends Component {
     }
   
     togglePicker = (event) => {
-        this.props.handleClick()
-        this.props.changeSign(this.state.valueGroups.sign)
+        this.props.toggleActiveComponent("Form")
+        this.props.handleMobileFormChange(this.state.valueGroups.sign)
         this.setState({
             isPickerShow: !this.state.isPickerShow
         })

@@ -4,6 +4,6 @@
 @import './lib/form.css';
 @import './lib/footer.css';
 @import './lib/thankyou.css';
-@import './lib/mediaqueries.css';
+@import './lib/pro-mediaquery.css';
+@import './lib/mobile-mediaquery.css';
 @import './lib/picker.css';
-@import './lib/picker.less';

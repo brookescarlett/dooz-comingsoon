@@ -3,13 +3,12 @@
 }
 
 .description {
-  margin-top: 57px;
-  margin-bottom: 57px;
+  margin: 9% 0px;
   max-width: 100%;
   min-width: 100%;
   font-size: 34px;
   color: white;
-  line-height: 48px;
+  line-height: 40px;
   letter-spacing: 2.3px;
 }
 
