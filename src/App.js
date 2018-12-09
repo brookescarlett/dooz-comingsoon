@@ -10,19 +10,16 @@ class App extends Component {
 
     this.state = {
       activeComponent: "Form", 
-      windowWidth: window.innerHeight,
       sign: "what's your sign?", 
       email: "what's your email?", 
       validEmail: true,
+      mainText: "elevated closet staples inspired by the zodiac — the celestial twelve"
     }
   }
 
   handleFormChange = (event) => {
-    console.log('here')
     this.setState({ [event.target.name] : event.target.value})
-    
     if (event.target.name === 'sign') {
-      console.log('here again')
       this.toggleActiveComponent("Form")
     } else if (event.target.name === 'email') {
       localStorage.setItem('email', event.target.value)
@@ -69,7 +66,6 @@ class App extends Component {
       <div className="background-img fixed top-0 left-0 right-0 bottom-0">
         <div className="container flex flex-column items-around">
           <SideBar 
-            mainText={"elevated closet staples inspired by the zodiac — the celestial twelve"}
             handleFormChange={this.handleFormChange}
             handleMobileFormChange={this.handleMobileFormChange}
             handleFormSubmit={this.handleFormSubmit}
@@ -78,8 +74,11 @@ class App extends Component {
             validEmail={this.state.validEmail}
             sign={this.state.sign}
             activeComponent={this.state.activeComponent}
+            mainText={this.state.mainText}
           />
-          <Footer />
+          <Footer 
+            activeComponent={this.state.activeComponent}
+          />
         </div>
       </div>
     );
