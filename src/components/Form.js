@@ -4,8 +4,8 @@ export default class Form extends Component {
 
 
     render() {
-        const emailCheck = {display: this.props.validEmail ? 'none' : 'block'}
-        const emailBack = {backgroundColor: this.props.falseEmail ? 'rgb(11, 19, 45)' : 'transparent'}
+        const emailCheck = { display: this.props.validEmail ? 'none' : 'block'}
+        const emailBack = { backgroundColor: this.props.validEmail ? 'transparent' : 'rgb(11, 19, 45)'}
         return (
 
             <div id="mc_embed_signup" className="animated fadeIn delay 4s">

@@ -55,6 +55,7 @@ export default class MobileOptions extends Component {
             <div>
                 <input 
                     type="text"
+                    id="mobile-input-box"
                     className="input-box"
                     value={valueGroups.sign}
                     readOnly

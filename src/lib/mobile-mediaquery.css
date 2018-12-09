@@ -9,14 +9,27 @@
         margin: 34px 14px 20px 14px;
         width: 172px;
         width: unset;
-
+        /* test styles */
+        /* background-color: orange; */
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: stretch; */
     }
 
     .sidebar {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        height: 70%;
+        /* justify-content: center; */
         width: unset;
+
+        /* test */
+        /* align-items: stretch; */
+        justify-content: space-between;
+
+
     }
 
     .logo {
@@ -29,13 +42,13 @@
     .description {
         font-size: 14px;
         letter-spacing: 1.27px;
-        margin-top: 0px;
-        margin-bottom: 12px;
+        /* margin-top: 0px; */
+        /* margin-bottom: 12px; */
         max-width: unset;
         min-width: unset;
         line-height: unset;
         width: 172px;
-        margin-bottom: 34px;
+        /* margin-bottom: 34px; */
     }
 
     input {
@@ -61,7 +74,6 @@
 
     }
 
-
     .caption {
         flex-direction: column;
     }
@@ -79,16 +91,24 @@
         width: 172px;
     }
 
+    #mobile-input-box {
+        background-color: rgb(11, 19, 45)
+    }
+
+    .incorrect-email {
+        width: 172px;
+        font-size: 12px;
+    }
+
     .social-icons {
         margin-right: 8px;
-        width: 20px;
-        height: 16px;
+        width: 30px;
+        height: 30px;
     }
 
      .social-icons:last-of-type {
         margin-right: 14px;
     }
-
 
     .mobile-launch {
         display: block;
