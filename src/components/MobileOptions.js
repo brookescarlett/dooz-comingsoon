@@ -70,6 +70,7 @@ export default class MobileOptions extends Component {
                                 optionGroups={optionGroups}
                                 valueGroups={valueGroups}
                                 onChange={this.handleChange}
+                                height={150}
                                 
                             />
                         </div>

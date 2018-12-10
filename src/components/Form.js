@@ -13,7 +13,7 @@ export default class Form extends Component {
                         <div id="mc_embed_signup_scroll">
                             <div className="incorrect-email" style={emailCheck}>*Please enter a valid email address</div>
                             <div className="mc-field-group">
-                            <input placeholder={this.props.email} name="email" onChange={this.props.handleFormChange} className="input-box" style={emailBack}/>
+                                <input placeholder={this.props.email} name="email" onChange={this.props.handleFormChange} className="input-box" style={emailBack}/>
                             </div>
 
                             <div className="mc-field-group input-group">

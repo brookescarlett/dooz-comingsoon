@@ -21,7 +21,7 @@
     .sidebar {
         display: flex;
         flex-direction: column;
-        height: 70%;
+        height: 75%;
         /* justify-content: center; */
         width: unset;
 
@@ -67,6 +67,10 @@
 
     }
 
+    /* input.box:first-of-type {
+        
+    } */
+
     .submit {
         margin-top: 17px;
         margin-bottom: 34px;
@@ -106,7 +110,7 @@
         height: 30px;
     }
 
-     .social-icons:last-of-type {
+    .social-icons:last-of-type {
         margin-right: 14px;
     }
 

@@ -10,7 +10,7 @@ class App extends Component {
 
     this.state = {
       activeComponent: "Form", 
-      sign: "what's your sign?", 
+      sign: `what's your sign? ${window.innerWidth < 500 ? '' : '(optional)'}`, 
       email: "what's your email?", 
       validEmail: true,
       mainText: "elevated closet staples inspired by the zodiac — the celestial twelve"
