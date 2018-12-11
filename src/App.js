@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Alert from './components/Alert'
 import SideBar from './components/SideBar'
 import Footer from './components/Footer'
 
@@ -13,7 +14,25 @@ class App extends Component {
       sign: `what's your sign? ${window.innerWidth < 500 ? '' : '(optional)'}`, 
       email: "what's your email?", 
       validEmail: true,
-      mainText: "elevated closet staples inspired by the zodiac — the celestial twelve"
+      mainText: "elevated closet staples inspired by the zodiac — the celestial twelve", 
+      fixViewPort: window.innerHeight < window.innerWidth ? true : false,
+    }
+  }
+
+  componentDidMount = () => {
+    console.log('hi')
+    window.addEventListener('resize', this.resize)
+  }
+
+  resize = () => {
+    if (window.innerHeight < window.innerWidth) { 
+      this.setState({
+        fixViewPort: true
+      })
+    } else {
+      this.setState({
+        fixViewPort: false
+      })
     }
   }
 
@@ -62,23 +81,31 @@ class App extends Component {
 
 
   render() {
+    console.log(this.state.fixViewPort)
     return (
       <div className="background-img fixed top-0 left-0 right-0 bottom-0">
         <div className="container flex flex-column items-around">
-          <SideBar 
-            handleFormChange={this.handleFormChange}
-            handleMobileFormChange={this.handleMobileFormChange}
-            handleFormSubmit={this.handleFormSubmit}
-            toggleActiveComponent={this.toggleActiveComponent}
-            email={this.state.email}
-            validEmail={this.state.validEmail}
-            sign={this.state.sign}
-            activeComponent={this.state.activeComponent}
-            mainText={this.state.mainText}
-          />
-          <Footer 
-            activeComponent={this.state.activeComponent}
-          />
+          {this.state.fixViewPort ? 
+              <Alert />
+              : 
+              <>
+                <SideBar 
+                  handleFormChange={this.handleFormChange}
+                  handleMobileFormChange={this.handleMobileFormChange}
+                  handleFormSubmit={this.handleFormSubmit}
+                  toggleActiveComponent={this.toggleActiveComponent}
+                  email={this.state.email}
+                  validEmail={this.state.validEmail}
+                  sign={this.state.sign}
+                  activeComponent={this.state.activeComponent}
+                  mainText={this.state.mainText}
+                />
+                <Footer 
+                  activeComponent={this.state.activeComponent}
+                />
+              </>
+
+          }
         </div>
       </div>
     );
