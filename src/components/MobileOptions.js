@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-import Picker from 'react-mobile-picker';
+import Picker from 'react-mobile-picker'
+
+import close from '../assets/svgs/close-icon.svg'
+
 
 export default class MobileOptions extends Component {
     constructor(props) {
@@ -62,6 +65,9 @@ export default class MobileOptions extends Component {
                     readOnly
                     onClick={this.togglePicker}
                 />
+                <br></br>
+                <img src={close} alt="close-icon" className="close-icon" onClick={() => this.props.toggleActiveComponent("Form")} />
+
                 <div className="picker-modal-container">
                     
                     <div className="pickar-modal">

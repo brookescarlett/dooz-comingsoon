@@ -71,11 +71,19 @@
         
     } */
 
+    .close-icon {
+        margin: 0px;
+    }
+
     .submit {
         margin-top: 17px;
         margin-bottom: 34px;
         font-size: 11px;
 
+    }
+
+    .submit:hover {
+        background-color: transparent !important;
     }
 
     .caption {
