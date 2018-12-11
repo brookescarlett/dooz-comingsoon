@@ -65,9 +65,7 @@ export default class MobileOptions extends Component {
                     readOnly
                     onClick={this.togglePicker}
                 />
-                <br></br>
-                <img src={close} alt="close-icon" className="close-icon" onClick={() => this.props.toggleActiveComponent("Form")} />
-
+                
                 <div className="picker-modal-container">
                     
                     <div className="pickar-modal">
@@ -84,6 +82,7 @@ export default class MobileOptions extends Component {
                     </div>
                 
                 </div>
+                <img src={close} alt="close-icon" className="close-icon" onClick={() => this.props.toggleActiveComponent("Form")} />
                 
             </div>
         )

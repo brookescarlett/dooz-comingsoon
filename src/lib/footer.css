@@ -10,37 +10,12 @@
     width: 36px;
     height: 36px;
     margin-right: 24px;
-    background-repeat: no-repeat;
-    background-position: cover;
-    transition: background-image 1s ease-in-out;
 }
 
-#Facebook {
-    background-image: url('../assets/svgs/facebook-ico.svg');
-  
-}
-
-#Instagram {
-    background-image: url('../assets/svgs/ig-ico.svg');
-}
-
-#Twitter {
-    background-image: url('../assets/svgs/tw-ico.svg');
-}
-
-#Facebook:hover {
-    background-image: url('../assets/svgs/fb-highlight-ico.svg');
-
-}
-
-#Instagram:hover {
-    background-image: url('../assets/svgs/ig-highlight-ico.svg');
-
-}
-
-#Twitter:hover {
-    background-image: url('../assets/svgs/tw-highlight-ico.svg');
-
+.social-icons:hover {
+    background-color: rgb(11, 19, 45);
+    border-radius: 200px;
+    transition: all 500ms ease-in-out;
 }
 
 .desktop-launch {
