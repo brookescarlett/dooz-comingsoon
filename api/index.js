@@ -21,8 +21,8 @@ app.use(function (req, res, next) {
 app.post('/api/mailchimp', function (req, res) {
     console.log(req.body.sign)
     let sendBody; 
-    request.post('https://us19.api.mailchimp.com/3.0/lists/ace1c561d7/members', {
-        headers: { 'Authorization': 'apikey 486f5627f6042b7a2d30d90516aabe5d-us19' },
+    request.post('https://us19.api.mailchimp.com/3.0/lists/4d3460b571/members', {
+        headers: { 'Authorization': 'apikey d2ef38ec59dacc1d114b9d70735777f0-us19' },
         json: {
             email_address: req.body.email,
             status: "subscribed", 

@@ -43,7 +43,7 @@ class App extends Component {
     e.preventDefault()
     console.log(this.validateEmail(this.state.email))
     if (this.validateEmail(this.state.email)) {
-      fetch('https://dc-server-hrdalgdski.now.sh/api/mailchimp', {
+      fetch('https://dc-server-svhvffgden.now.sh/api/mailchimp', {
         method: "POST",
         body: JSON.stringify({ email: this.state.email, sign: this.state.sign }),
         headers: { "content-type": "application/json" }

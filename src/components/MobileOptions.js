@@ -9,8 +9,7 @@ export default class MobileOptions extends Component {
                 sign: 'Sign',
             },
             optionGroups: {
-                sign: ['aquarius: jan 20-feb 18', 
-                'pisces: feb 19-mar 20',
+                sign: [         
                 'aries: mar 21-apr 19',
                 'taurus: apr 20-may 20',
                 'gemini: may 21-june 20',
@@ -20,7 +19,9 @@ export default class MobileOptions extends Component {
                 'libra: sep 23 - oct 22',
                 'scorpio: oct 23-nov 21',
                 'sagittarius: nov 22-dec 21',
-                'capricorn: dec 22-jan 19',               
+                'capricorn: dec 22-jan 19', 
+                'aquarius: jan 20-feb 18',
+                'pisces: feb 19-mar 20',              
                 ],
             }, 
             isPickerShow: true
