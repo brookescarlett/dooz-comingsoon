@@ -15,7 +15,7 @@ class App extends Component {
       email: "what's your email?", 
       validEmail: true,
       mainText: "elevated closet staples inspired by the zodiac — the celestial twelve", 
-      fixViewPort: window.innerHeight < window.innerWidth ? true : false,
+      fixViewPort: ((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)) && window.innerHeight < window.innerWidth) && window.innerHeight < window.innerWidth ? true : false,
     }
   }
 
@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   resize = () => {
-    if (window.innerHeight < window.innerWidth) { 
+    if ((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)) && window.innerHeight < window.innerWidth) { 
       this.setState({
         fixViewPort: true
       })
