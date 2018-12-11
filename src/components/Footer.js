@@ -18,8 +18,6 @@ export default class Footer extends Component {
 
                         <a href="https://twitter.com/dooznyc" target="_blank" rel="noopener noreferrer"><div id="Twitter" className="social-icons"></div></a>
 
-                        {/* <a href="https://www.instagram.com/dooznyc/?hl=en"><div id="Instagram" className="social-icons" target="_blank" rel="noopener noreferrer"></div></a>
-                        <a href="https://twitter.com/dooznyc"><div id="Twitter" className="social-icons" target="_blank" rel="noopener noreferer"></div></a> */}
 
                     </div>
                 )}
