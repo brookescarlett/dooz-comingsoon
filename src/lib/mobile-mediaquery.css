@@ -21,22 +21,20 @@
     .sidebar {
         display: flex;
         flex-direction: column;
-        height: 75%;
+        height: 50%;
         /* justify-content: center; */
         width: unset;
 
         /* test */
         /* align-items: stretch; */
         justify-content: space-between;
-
-
     }
 
     .logo {
         margin: 0px;
         height: 72px;
         text-align: center;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .description {
@@ -67,10 +65,6 @@
 
     }
 
-    /* input.box:first-of-type {
-        
-    } */
-
     .close-icon {
         margin: 0px;
     }
@@ -79,7 +73,6 @@
         margin-top: 17px;
         margin-bottom: 34px;
         font-size: 11px;
-
     }
 
     .submit:hover {
@@ -118,6 +111,10 @@
         height: 30px;
     }
 
+    .social-icons:hover {
+        background-color: unset;
+    }
+
     .social-icons:last-of-type {
         margin-right: 14px;
     }
@@ -125,6 +122,7 @@
     .mobile-launch {
         display: block;
         margin-bottom: 10%;
+        margin-top: 0% !important;
     }
 
     .thank-you {
