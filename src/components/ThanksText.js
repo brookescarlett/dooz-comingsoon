@@ -9,7 +9,7 @@ export default class ThanksText extends Component {
 
                 <p class="thank-you">Hi {localStorage.email ? localStorage.email : null}!</p>
                 <p class="thank-you">Thank you for signing up. Check your inbox for exclusive Dooz updates. </p>
-                <p class="thank-you">See you March!</p>
+                <p class="thank-you">See you in March!</p>
 
             </div>
         )

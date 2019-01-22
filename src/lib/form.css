@@ -85,8 +85,9 @@ input::placeholder {
 
 .opt {
   cursor: pointer !important;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
+  letter-spacing: .25px;
 }
 
 .rad {

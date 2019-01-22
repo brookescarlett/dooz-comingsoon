@@ -20,7 +20,6 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    console.log('hi')
     window.addEventListener('resize', this.resize)
   }
 
@@ -67,7 +66,7 @@ class App extends Component {
         body: JSON.stringify({ email: this.state.email, sign: this.state.sign }),
         headers: { "content-type": "application/json" }
       })
-        .then(res => console.log(res))
+      .then(res => console.log(res))
       this.setState({
         activeComponent: "ThankYou"
       })
@@ -83,7 +82,7 @@ class App extends Component {
   render() {
     console.log(this.state.fixViewPort)
     return (
-      <div className="background-img fixed top-0 left-0 right-0 bottom-0">
+      <div className="background-img fixed top-0 left-0 right-0 bottom-0 overflow-scroll">
         <div className="container flex flex-column items-around">
           {this.state.fixViewPort ? 
               <Alert />
