@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class ThanksText extends Component {
 
     render() {
-        console.log(localStorage.email)
+        // console.log(localStorage.email)
         return(
             <div>
 

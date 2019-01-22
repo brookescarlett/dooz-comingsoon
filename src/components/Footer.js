@@ -8,7 +8,7 @@ import Twitter from '../assets/svgs/tw-ico.svg'
 export default class Footer extends Component {
 
     render() {
-        console.log(this.props, window.innerWidth)
+        // console.log(this.props, window.innerWidth)
         return (
             <div className="footer flex justify-between items-center">
                 { this.props.activeComponent === "Options" && window.innerWidth < 500 ? null : (

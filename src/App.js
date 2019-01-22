@@ -59,7 +59,7 @@ class App extends Component {
 
   handleFormSubmit = (e) => {
     e.preventDefault()
-    console.log(this.validateEmail(this.state.email))
+    // console.log(this.validateEmail(this.state.email))
     if (this.validateEmail(this.state.email)) {
       fetch('https://dc-server-svhvffgden.now.sh/api/mailchimp', {
         method: "POST",
@@ -80,7 +80,7 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state.fixViewPort)
+    // console.log(this.state.fixViewPort)
     return (
       <div className="background-img fixed top-0 left-0 right-0 bottom-0 overflow-scroll">
         <div className="container flex flex-column items-around">
